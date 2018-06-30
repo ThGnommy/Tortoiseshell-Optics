@@ -1,0 +1,282 @@
+* {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Helvetica;
+}
+
+.sitecontainer {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  height: 31rem;
+  background-image: url("../../resources/images/glasses-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.titlebar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: cadetblue;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 0;
+}
+
+.titleimg {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+span {
+  color: white;
+  font-family: Helvetica;
+  padding-right: 2rem;
+  font-size: 1rem;
+}
+
+.justlook {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+h2 {
+  display: block;
+  float: right;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  margin-right: -2rem;
+}
+
+h3 {
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-right: 5rem;
+}
+
+.imgs.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.service1, .service2, .service3 {
+  display: flex;
+  font-family: Helvetica;
+  width: 5rem;
+  height: 8rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0 6rem;
+}
+
+img.paper {
+  width: 3.5rem;
+}
+
+img.ruler, img.truck {
+  width: 5rem;
+}
+
+.desc1 {
+  font-family: Helvetica;
+  width: 35%;
+  margin-right: 2.5%;
+}
+
+.desc2 {
+  font-family: Helvetica;
+  width: 35%;
+  margin-left: 2.5%;
+}
+
+.desctitle {
+  margin-bottom: 1rem;
+}
+.description.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: azure;
+}
+
+.footerimg {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+
+.copyright {
+  color: black;
+  font-style: Helvetica;
+}
+
+
+
+
+/* For Desktop Devices */
+
+@media only screen and (max-width: 1024px) {
+
+  .sitecontainer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-right: 0;
+  }
+}
+
+
+/* For Tablet Devices */
+
+@media only screen and (max-width: 768px) {
+
+  .sitecontainer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+.titlebar {
+  margin-top: 0;
+}
+
+  h2 {
+    display: block;
+    float: right;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 1.33rem;
+    line-height: 1.2;
+    background-color: white;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+  }
+
+  .justlook {
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .desc1, .desc2 {
+    width: 40%;
+  }
+
+  header {
+    height: 22rem;
+  }
+}
+
+/* For Mobile Devices */
+
+@media only screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  nav.mobile-nav {
+    display: flex;
+  }
+
+  header {
+    background-position: 20%;
+  }
+
+  .imgs.container {
+    flex-direction: column;
+  }
+
+  .description.container {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem auto;
+  }
+
+  .desc1 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+
+  .desc2 {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 0.77rem;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .justlook {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+  nav.mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    height: 17rem;
+  }
+
+  h2 {
+    float: none;
+    margin: 9rem 0 0 0;
+    padding: 1rem 0;
+  }
+
+  .imgs.container {
+    margin: 3.77rem 0;
+  }
+}
